@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,36 +9,43 @@
 </head>
 <body>
     <section class="cadastroLoja">
-       
-<div class="informaçao">
-    <label for="nome">Nome :</label>
-    <input type="text" id="nome">
-</div>
-<div class="informaçao">
-    <label for="endereço">Endereço :
-        <input type="text" name="endereco" id="endereço">
-    </label>
-</div>
-
-<div class="informaçao">
-    <label for="diasDaSemana">Dias da semana que esta aberto :</label>
-    <select name="diasDaSemana" id="diasDaSemana">
-    <option value="segunda">segunda</option>
-    <option value="terça">terça</option>
-    <option value="quarta">quarta</option>
-    <option value="quinta">quinta</option>
-    <option value="sexta">sexta</option>
-    <option value="sabado">sabado</option>
-    <option value="domingo">domingo</option>
-</div>
-</select>
-<div class="horarios">
-    <label for="text" id="abertura" >Horario de Abertura : 7h</label>
-
-    <br>
-    <label for="text" id="fechamento">Horario de fechamento : 18h</label>
-</div>
-
+        <form id="form" method="post" action="http://api.flit.com.br/submeterDados">
+            <fieldset id="campos">
+                <div class="informaçao">
+                    <label for="nome">Nome :</label>
+                    <input type="text" id="nome">
+                </div>
+                <div class="informaçao">
+                    <label for="endereco">Endereço : </label>
+                    <input type="text" name="endereco" id="endereco">
+                </div>
+                <div class="informaçao">
+                    <label for="diasDaSemana">Dias da semana que esta aberto :</label>
+                    <select name="diasDaSemana" id="diasDaSemana">
+                        <option value="segunda">segunda</option>
+                        <option value="terça">terça</option>
+                        <option value="quarta">quarta</option>
+                        <option value="quinta">quinta</option>
+                        <option value="sexta">sexta</option>
+                        <option value="sabado">sabado</option>
+                        <option value="domingo">domingo</option>
+                    </select>
+                </div>
+                <div class="horarios">
+                    <label>Horario de Abertura : </label>
+                    <input type="time" name="abertura" id="abertura">
+                    <br>
+                    <label>Horario de fechamento : </label>
+                    <input type="time" name="fechamento" id="fechamento">
+                </div>
+                <input type="submit" value="enviar">
+                </div>
+                </fieldset>
+        </form>
     </section>
+    <script src="js.js">
+    </script>
+
 </body>
+
 </html>
