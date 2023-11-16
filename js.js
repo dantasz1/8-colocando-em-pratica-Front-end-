@@ -1,3 +1,5 @@
-document.getElementById('#nome').addEventListener('oninput' , (event ) => {
-    console.log("")
+
+document.getElementById('nome').addEventListener('click' , (event ) => {
+    console.log(event)
+
 })
