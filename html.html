@@ -11,15 +11,15 @@
     <section class="cadastroLoja">
         <form id="form" method="post" action="http://api.flit.com.br/submeterDados">
             <fieldset id="campos">
-                <div class="informaçao">
+                <div class="informacao">
                     <label for="nome">Nome :</label>
                     <input type="text" id="nome">
                 </div>
-                <div class="informaçao">
+                <div class="informacao">
                     <label for="endereco">Endereço : </label>
                     <input type="text" name="endereco" id="endereco">
                 </div>
-                <div class="informaçao">
+                <div class="informacao">
                     <label for="diasDaSemana">Dias da semana que esta aberto :</label>
                     <select name="diasDaSemana" id="diasDaSemana">
                         <option value="segunda">segunda</option>
@@ -31,10 +31,11 @@
                         <option value="domingo">domingo</option>
                     </select>
                 </div>
-                <div class="horarios">
+                    <div class="horarios">
                     <label>Horario de Abertura : </label>
                     <input type="time" name="abertura" id="abertura">
-                    <br>
+                </div>
+                    <div class="horarios">
                     <label>Horario de fechamento : </label>
                     <input type="time" name="fechamento" id="fechamento">
                 </div>
